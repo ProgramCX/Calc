@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include "windowsizeadapter.h"
-#include "qevent.h"
+#include "QKeyEvent"
 namespace Ui {
 class FormMain;
 }
@@ -63,6 +63,7 @@ private:
     Ui::FormMain *ui;
     QString input;
     QString expression;
+    void keyPressEvent(QKeyEvent *event);
     double calc(QString firstExpression,QString lastExpression);
     bool calced=0;
     bool sqrled=0;

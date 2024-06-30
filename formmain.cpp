@@ -524,6 +524,13 @@ void FormMain::on_btnequal_clicked()
     }
 }
 
+void FormMain::keyPressEvent(QKeyEvent *event)
+{
+    if(event->key()==Qt::Key_Enter ||event->key()==Qt::Key_Equal ){
+        on_btnequal_clicked();
+    }
+}
+
 double FormMain::calc(QString firstExpression,QString lastExpression)
 {
 
