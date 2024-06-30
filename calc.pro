@@ -37,3 +37,22 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     res/res.qrc
 RC_ICONS =res\icon.ico
+
+# 版本信息
+VERSION = 1.0.0.0
+
+
+# 公司名称
+QMAKE_TARGET_COMPANY = "ProgramCX"
+
+# 产品名称
+QMAKE_TARGET_PRODUCT = "Calculator"
+
+# 文件说明
+QMAKE_TARGET_DESCRIPTION = "Calculator compiled by MSVC 2019, 64 bit"
+
+# # 版权信息
+# QMAKE_TARGET_COPYRIGHT = "Copyright 2008-2016 The Qt Company Ltd. All rights reserved."
+
+# 中文（简体）
+RC_LANG = 0x0004
